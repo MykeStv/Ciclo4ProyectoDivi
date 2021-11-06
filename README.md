@@ -6,6 +6,8 @@ Participantes que conforman al equipo DIVI:
   Nicolás Esteban López Novoa
   Maycol Steven Rincon Bayona
   Wilder Andres Alvarez Lopez
+  Kevin ..
+  Marlon B ..
 
 Objetivo:
   Desarrollar una pagina web que permita el alquiler de vehiculos, con admision de usuario para los empleados y ingreso de clientes para los nuevos alquileres.
