@@ -1,0 +1,130 @@
+/*-----RESOLUTION < 900px-----*//*FUNCIONAL*//*EN DESARROLLO*/
+@media (max-width:900px) {
+    /*-----BODY->-----*/
+    body{
+        margin: 0;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    /*-----<-BODY-----*/
+    /*-----HEADER->-----*/
+    .header{
+        background-color: black;
+        color: rgb(255, 255, 255);
+    }
+    .header a{
+        text-decoration: none;
+        color: white;
+        white-space: nowrap;
+    }
+    .title{
+        font-size: 3em;
+        font-weight: bold;
+        padding-left: 1.5em;
+        padding-right: 0.5em;
+    }
+    .title-nav-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navigation ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .navigation ul li{
+        display: inline-block;
+    }
+    .navigation ul li a{
+        display: block;
+        transition: all 0.3s;
+        padding: 1rem;
+        padding-top: 2em;
+        padding-bottom: 2.5em;
+        border-bottom: 4px solid black;
+    }
+    .navigation ul li #user{
+        margin-right: 1em;
+        margin-left: 2.0em;
+    }
+    .navigation ul li a:hover{
+        background-color: rgb(0, 15, 15);
+        color: rgb(0, 188, 202);
+        border-bottom: 4px solid;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        /*border-radius: 20px;*/
+    }
+    .navigation ul li a:focus{
+        color: rgb(0, 188, 202);
+        border-bottom: 4px solid;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    /*-----<-HEADER-----*/
+}
+/*-----RESOLUTION > 900px-----*//*FUNCIONAL*/
+@media (min-width:900px) {
+    /*-----BODY->-----*/
+    body{
+        margin: 0;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    /*-----<-BODY-----*/
+    /*-----HEADER->-----*/
+    .header{
+        background-color: black;
+        color: rgb(255, 255, 255);
+    }
+    .header a{
+        text-decoration: none;
+        color: white;
+        white-space: nowrap;
+    }
+    .title{
+        font-size: 3em;
+        font-weight: bold;
+        padding-left: 1.0em;
+        padding-right: 0.5em;
+    }
+    .title-nav-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navigation ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .navigation ul li{
+        display: inline-block;
+    }
+    .navigation ul li a{
+        display: block;
+        transition: all 0.3s;
+        padding: 1rem;
+        padding-top: 2em;
+        padding-bottom: 2.5em;
+        border-bottom: 4px solid black;
+    }
+    .navigation ul li #user{
+        margin-right: 0.5em;
+        margin-left: 2em;
+    }
+    .navigation ul li a:hover{
+        background-color: rgb(0, 15, 15);
+        color: rgb(0, 188, 202);
+        border-bottom: 4px solid;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        /*border-radius: 20px;*/
+    }
+    .navigation ul li a:focus{
+        color: rgb(0, 188, 202);
+        border-bottom: 4px solid;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    /*-----<-HEADER-----*/
+}

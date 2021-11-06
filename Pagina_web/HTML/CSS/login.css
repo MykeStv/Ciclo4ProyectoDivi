@@ -1,0 +1,303 @@
+/* efectos por defecto */
+body{
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(../imagenes/fondo_difuminado.jpg);
+}
+
+/*Encabezado de la pagina web*/
+.header{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+}
+
+.title{
+    font-size: 3em;
+    font-weight: bold;
+    padding-left: 1.5em;
+    padding-right: 0.5em;
+}
+.title-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* efectos para el contenedor de pantalla completa */
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    
+    background-image: url(../Images/fondo_difuminado.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* contenedor del login a la izquierda */
+#contenedorcentrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+    
+    min-width: 380px;
+    max-width: 900px;
+    width: 90%;
+    
+    background-color: #5f6769;
+    
+    /*opacity: 0.50;
+    filter: alpha(opacity=50);*/
+    
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    padding: 30px;
+    box-sizing: border-box;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li{
+    display: inline-block;
+}
+
+.navigation ul li a{
+    display: block;
+    transition: all 0.3s;
+    padding: 1rem;
+    padding-top: 2em;
+    padding-bottom: 2.5em;
+    border-bottom: 4px solid black;
+}
+.navigation ul li #user{
+    margin-right: 0.5em;
+    margin-left: 2em;
+}
+
+.navigation ul li a:hover{
+    background-color: rgb(0, 15, 15);
+    color: rgb(0, 188, 202);
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /*border-radius: 20px;*/
+}
+.navigation ul li a:focus{
+    color: rgb(0, 188, 202);
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* formulario de login */
+/* formulario de login */
+#login {
+    width: 100%;
+    max-width: 320px;
+    min-width: 320px;
+    padding: 30px 30px 50px 30px;
+    background-color: #719192;
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+    
+    opacity: 1;
+    filter: alpha(opacity=1);
+}
+
+#login label {
+    display: block;
+    font-family: 'Overpass', sans-serif;
+    font-size: 120%;
+    color:#3c4245;
+    
+    margin-top: 15px;
+}
+
+#login input {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color: #0b0c0c;
+    
+    display: block;
+    width: 100%;
+    height: 40px;
+    
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    
+    box-sizing: border-box;
+    
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+#login input::placeholder {
+    font-family: 'Overpass', sans-serif;
+    color: #7e7575;
+}
+
+#login button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color:#1b262c;
+    width: 100%;
+    height: 40px;
+    border: none;
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    background-color: #4f66b3;;
+    
+    margin-top: 10px;
+}
+
+#login button:hover {
+    background-color: #010608;
+    color:#020003;;
+}
+/* formulario de login */
+/* formulario de login */
+
+/* seccion de la derecha */
+/* seccion de la derecha */
+/* por defecto */
+#derecho {
+    /*display: flex;
+    align-items:center;
+    justify-content:center;*/
+    
+    text-align: center;
+    width: 100%;
+    
+    opacity: 0.70;
+    filter: alpha(opacity=70);
+    
+    padding:20px 20px 20px 50px;
+    box-sizing: border-box;
+}
+
+.titulo {
+    font-size: 300%;
+    color:#0c0414;;
+}
+
+.logo-empresa img {
+    width: 60%;
+}
+
+hr {
+    border-top: 1px solid #0d021a;
+	border-bottom: 1px solid #0d021a;
+    
+}
+.pie-form {
+    font-size: 90%;
+    text-align: center;    
+    margin-top: 15px;
+}
+
+.pie-form a {
+    display: block;
+    text-decoration: none;
+    color: #0d021a;
+    margin-bottom: 3px;
+}
+
+.pie-form a:hover {
+    color: #719192;
+}
+/* seccion de la derecha */
+/* seccion de la derecha */
+
+/* ajustar a pantallas con ancho menor o igual a 775px; */
+/* ajustar a pantallas con ancho menor o igual a 775px; */
+@media all and (max-width: 775px)
+{
+    #contenedorcentrado {
+        flex-direction:column-reverse;
+
+        min-width: 380px;
+        max-width: 900px;
+        width: 90%;
+
+        background-color: #082574;
+
+        /*opacity: 0.50;
+        filter: alpha(opacity=50);*/
+
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+
+        -webkit-box-shadow: 0px 0px 5px 5px rgba(26, 6, 44, 0.15);
+        -moz-box-shadow: 0px 0px 5px 5px rgba(26, 6, 44, 0.15);
+        box-shadow: 0px 0px 5px 5px rgba(26, 6, 44, 0.15);
+
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    
+    #login {
+        margin: 0 auto;
+    }
+    
+    #derecho {
+        padding:20px 20px 20px 20px;
+    }
+    
+    #login label {
+        text-align: left;
+    }
+    .main{
+        background-color: rgb(235, 235, 235);
+        margin: 0 auto;
+        margin-top: 2em;
+        margin-left: 3em;
+        margin-right: 3em;
+        padding-bottom: 1em;
+    }
+   
+    .footer{
+        margin-top: 50px;
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+    }
+}
+/* ajustar a pantallas con ancho menor o igual a 775px; */
+/* ajustar a pantallas con ancho menor o igual a 775px; */

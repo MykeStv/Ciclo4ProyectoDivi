@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alquilarte - alquiler</title>
+    <link rel="stylesheet" href="CSS/styleAlquiler.css" />
+  </head>
+  <body>
+    <!--ENCABEZADO-->
+    <header class="header">
+      <div class="container title-nav-container">
+        <a href="#" class="title">ALQUILARTE</a>
+        <nav class="navigation">
+          <ul>
+            <li><a href="login.html" target="_self">INICIO</a></li>
+            <li>
+              <a href="register.html" target="_self">REGISTRO VEHICULO</a>
+            </li>
+            <li>
+              <a href="update_find.html" target="_self">
+                ACTUALIZACION VEHICULO
+              </a>
+            </li>
+            <li><a href="alquiler.html" target="_self">ALQUILER</a></li>
+            <li><a href="devolucion.html" target="_self">DEVOLUCION</a></li>
+            <li><a id="user" href="usuario.html" target="_self">USUARIO</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--INICIO DE LA SECCION-->
+
+    <main class="main">
+      <h3 class="main-title">CATÁLOGO DE VEHICULOS EN ALQUILER</h3>
+
+      <!--FILTRO DEL CATALOGO-->
+      <div id="filtro-catalogo">
+        <table class="table-filtro">
+          <tr>
+            <th rowspan="2"><button class="tf-filtrar">Filtrar</button></th>
+            <th>Placa</th>
+            <th>Tipo</th>
+            <th>Modelo</th>
+            <th>Puertas</th>
+            <th>Puestos</th>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="text"
+                name=""
+                id="tf-placa"
+                onkeyup="filtrarPlaca()"
+              />
+            </td>
+            <td>
+              <select
+                name="filtro-tipo"
+                id="tf-tipo"
+                class="tf-select tipo"
+                onChange="selectFilter()"
+              >
+                <option value="noValue" selected>Todos</option>
+                <option value="Hatchback">Hatchback</option>
+                <option value="Sedan">Sedan</option>
+                <option value="Coupe">Coupe</option>
+                <option value="SUV">SUV</option>
+              </select>
+            </td>
+            <td>
+              <select
+                name="filtro-modelo"
+                id="tf-modelo"
+                class="tf-select modelo"
+                onChange="selectFilter()"
+              >
+                <option value="noValue" selected>Todos</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+              </select>
+            </td>
+            <td>
+              <select
+                name="filtro-puertas"
+                id="tf-puertas"
+                class="tf-select puertas"
+                onChange="selectFilter()"
+              >
+                <option value="noValue" selected>Seleccionar..</option>
+                <option value="1">1 puertas</option>
+                <option value="2">2 puertas</option>
+                <option value="3">3 puertas</option>
+                <option value="4">4 puertas</option>
+                <option value="5">5 puertas</option>
+              </select>
+            </td>
+            <td>
+              <select
+                name="filtro-puestos"
+                id="tf-puestos"
+                class="tf-select puertas"
+                onChange="selectFilter()"
+              >
+                <option value="noValue" selected>Seleccionar..</option>
+                <option value="1">1 puestos</option>
+                <option value="2">2 puestos</option>
+                <option value="3">3 puestos</option>
+                <option value="4">4 puestos</option>
+                <option value="5">5 puestos</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!--CATALOGO DE VEHICULOS-->
+      <div class="catalogo">
+        <table class="tbl-catalogo" id="table-catalogo">
+          <thead>
+            <tr class="tblrow-encabezado">
+              <th>Placa</th>
+              <th>Tipo</th>
+              <th>Modelo</th>
+              <th>Puertas</th>
+              <th>Puestos</th>
+              <th>Alquilar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tblrow cont1">
+              <td>ktc123</td>
+              <td>Hatchback</td>
+              <td>2020</td>
+              <td>5</td>
+              <td>5</td>
+              <td>
+                <a href="alquilerCliente.html" class="tblbtn-alquiler">
+                  Alquilar
+                </a>
+              </td>
+            </tr>
+            <tr class="tblrow cont2">
+              <td>000000</td>
+              <td>Sedan</td>
+              <td>2019</td>
+              <td>4</td>
+              <td>5</td>
+              <td>
+                <a href="alquilerCliente.html" class="tblbtn-alquiler">
+                  Alquilar
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <!--FOOTER DE LA PAGINA WEB-->
+    <footer class="footer">
+      <div class="container direction">Dir. Av 50</div>
+      <div class="line"></div>
+      <div class="container contact">
+        <label>Correo: alquilarte@arqularte.com</label>
+        <label>Telefono: 01 8000 9210099</label>
+      </div>
+      <div class="line"></div>
+      <div class="container team">Equipo Divi</div>
+    </footer>
+
+    <!--SCRIPT OF JS-->
+    <script src="js/alquiler.js"></script>
+  </body>
+</html>

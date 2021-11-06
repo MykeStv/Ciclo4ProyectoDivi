@@ -1,0 +1,205 @@
+/*Declaracion de variables*/
+:root {
+  --color-negro: #000000;
+  --color-gris: #707070;
+  --color-grisLight: #dfdfdf;
+  --color-turq: rgb(0, 188, 202);
+  --color-blanco: #ffffff;
+  --color-brightTruq: rgb(0, 238, 255);
+}
+/*-----RESOLUTION > 900px-----*/ /*FUNCIONAL*/
+@media (min-width: 900px) {
+  /*-----BODY->-----*/
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  /*-----<-BODY-----*/
+  /*-----HEADER->-----*/
+  .header {
+    background: black;
+    color: rgb(255, 255, 255);
+  }
+  .header a {
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+  }
+  .title {
+    font-size: 3em;
+    font-weight: bold;
+    padding-left: 1em;
+    padding-right: 0.5em;
+  }
+  .title-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .navigation ul li {
+    display: inline-block;
+  }
+  .navigation ul li a {
+    display: block;
+    transition: all 0.3s;
+    padding: 2em 1em 2.5em;
+    border-bottom: 4px solid black;
+  }
+  .navigation ul li #user {
+    margin-right: 0.5em;
+    margin-left: 2em;
+  }
+  .navigation ul li a:hover {
+    background: rgb(0, 15, 15);
+    color: rgb(0, 188, 202);
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  /*Revisar el focus si está funcionando correctamente*/
+  .navigation ul li a:focus {
+    color: rgb(0, 188, 202);
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  /*-----<-HEADER-----*/
+
+  /*-----MAIN->----*/
+  .main {
+    background: rgb(235, 235, 235);
+    margin: 2em 3em auto;
+    padding-bottom: 1em;
+  }
+  .main-title {
+    text-align: center;
+    padding: 2em;
+  }
+  /*-----FILTER->----*/
+
+  #filtro-catalogo {
+    display: flex;
+    justify-content: center;
+  }
+  .table-filtro {
+    margin: 0;
+    width: 90%;
+    border-collapse: collapse;
+  }
+  .table-filtro th {
+    width: 15%;
+    padding: 8px 0;
+    border: 2px solid var(--color-gris);
+    text-transform: uppercase;
+  }
+  .table-filtro td {
+    padding: 8px 0;
+    border: 2px solid var(--color-gris);
+    align-items: center;
+    text-align: center;
+  }
+  button.tf-filtrar {
+    text-transform: uppercase;
+    font-weight: 900;
+    background: var(--color-turq);
+    color: #ffffff;
+    width: 70%;
+    padding: 15px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .tf-filtrar:hover {
+    background: var(--color-brightTruq);
+  }
+  .tf-select,
+  #tf-placa {
+    width: 70%;
+    text-align: center;
+  }
+
+  /*-----<-FILTRO-----*/
+  /*-----CATALOGO VEHICULOS->-----*/
+  div.catalogo {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 20px 0;
+  }
+
+  table.tbl-catalogo {
+    border-collapse: collapse;
+    width: 90%;
+  }
+
+  table.tbl-catalogo,
+  .tbl-catalogo th,
+  .tbl-catalogo td {
+    border: 1px solid var(--color-gris);
+    padding: 8px;
+    text-align: center;
+  }
+  .tbl-catalogo th {
+    width: 15%;
+    background: var(--color-negro);
+    color: var(--color-blanco);
+    text-transform: uppercase;
+  }
+  .tblbtn-alquiler {
+    display: block;
+    width: 70%;
+    margin: auto;
+    padding: 3px;
+    border: none;
+    background: var(--color-turq);
+    color: var(--color-blanco);
+    text-decoration: none;
+  }
+  .tblbtn-alquiler:hover {
+    background: var(--color-brightTruq);
+    font-weight: 600;
+  }
+  tr.tblrow:hover {
+    background: var(--color-grisLight);
+  }
+
+  /*-----<-CATALOGO VEHICULOS-----*/
+  /*-----FOOTER->-----*/
+  .footer {
+    background-color: black;
+    position: relative;
+    margin-top: 2em;
+    width: 100%;
+    height: 5em;
+    align-items: center;
+    display: flex;
+  }
+  .footer .line {
+    width: 1px;
+    height: 4em;
+    border-right: 1px solid var(--color-gris);
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .footer .container {
+    padding: 0;
+    text-align: center;
+    display: block;
+    /*white-space: nowrap;*/
+    color: var(--color-gris);
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    width: 33%;
+  }
+  .footer .direction {
+    padding-left: 8%;
+  }
+  .footer .team {
+    padding-right: 8%;
+  }
+  /*-----<-FOOTER-----*/
+}

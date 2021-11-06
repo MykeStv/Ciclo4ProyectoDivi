@@ -1,0 +1,204 @@
+/*Declaracion de variables*/
+:root {
+  --color-negro: #000000;
+  --color-gris: #707070;
+  --color-grisLight: #dfdfdf;
+  --color-turq: rgb(0, 188, 202);
+  --color-blanco: #ffffff;
+  --color-brightTruq: rgb(0, 238, 255);
+}
+/*-----RESOLUTION > 900px-----*/ /*FUNCIONAL*/
+@media (min-width: 900px) {
+  /*-----BODY->-----*/
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  /*-----<-BODY-----*/
+  /*-----HEADER->-----*/
+  .header {
+    background: black;
+    color: rgb(255, 255, 255);
+  }
+  .header a {
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+  }
+  .title {
+    font-size: 3em;
+    font-weight: bold;
+    padding-left: 1em;
+    padding-right: 0.5em;
+  }
+  .title-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .navigation ul li {
+    display: inline-block;
+  }
+  .navigation ul li a {
+    display: block;
+    transition: all 0.3s;
+    padding: 2em 1em 2.5em;
+    border-bottom: 4px solid black;
+  }
+  .navigation ul li #user {
+    margin-right: 0.5em;
+    margin-left: 2em;
+  }
+  .navigation ul li a:hover {
+    background: rgb(0, 15, 15);
+    color: rgb(0, 188, 202);
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  /*Revisar el focus si está funcionando correctamente*/
+  .navigation ul li a:focus {
+    color: rgb(0, 188, 202);
+    border-bottom: 4px solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  /*-----<-HEADER-----*/
+
+  /*-----MAIN->-----*/
+  .main {
+    background: rgb(235, 235, 235);
+    margin: 2em 3em auto;
+    padding-bottom: 1em;
+  }
+  .main-title {
+    text-align: center;
+    padding: 2em;
+  }
+  /*-----FORM CONTENT->-----*/
+  .container-form {
+    max-width: 800px;
+    width: 100%;
+
+    padding: 25px 30px;
+    margin: 0 auto;
+  }
+  .container-form form {
+    text-align: center;
+  }
+  .container-form form .datos-usuario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  form .datos-usuario .input-cliente {
+    width: calc(100% / 2);
+    margin: 15px 0 10px 0;
+  }
+  .datos-usuario .input-cliente .form-cliente:hover {
+    border: 2px solid var(--color-turq);
+    border-radius: 3px;
+  }
+  .datos-usuario .input-cliente label {
+    font-weight: 500;
+  }
+  .datos-usuario .input-cliente input {
+    height: 25px;
+    width: 85%;
+    text-align: center;
+  }
+  .input-cliente input:focus {
+    outline: none;
+    border: 2px solid var(--color-turq);
+    border-radius: 3px;
+  }
+
+  .datos-usuario .input-cliente select {
+    height: 30px;
+    width: 86.5%;
+    text-align: center;
+  }
+  .input-cliente select:focus {
+    outline: none;
+    border: 2px solid var(--color-turq);
+    border-radius: 3px;
+  }
+
+  /*-----<-FORM CONTENT-----*/
+  /*-----FORM BUTTONS->-----*/
+  .form-btn button {
+    width: 15%;
+    padding: 7px;
+    margin: 0 8px;
+    font-size: 0.9em;
+    outline: none;
+    background: var(--color-turq);
+    color: var(--color-blanco);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .form-btn button:hover {
+    background: var(--color-brightTruq);
+    font-weight: 600;
+  }
+
+  .form-btn a {
+    display: inline-block;
+    width: 15%;
+    margin: 0 8px;
+    padding: 5px;
+    font-size: 0.9em;
+    background: var(--color-turq);
+    color: var(--color-blanco);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .form-btn a:hover {
+    background: var(--color-brightTruq);
+    font-weight: 600;
+  }
+  /*-----<-FORM BUTTONS-----*/
+  /*-----FOOTER->-----*/
+  .footer {
+    background-color: black;
+    position: relative;
+    margin-top: 2em;
+    width: 100%;
+    height: 5em;
+    align-items: center;
+    display: flex;
+  }
+  .footer .line {
+    width: 1px;
+    height: 4em;
+    border-right: 1px solid var(--color-gris);
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .footer .container {
+    padding: 0;
+    text-align: center;
+    display: block;
+    /*white-space: nowrap;*/
+    color: var(--color-gris);
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    width: 33%;
+  }
+  .footer .direction {
+    padding-left: 8%;
+  }
+  .footer .team {
+    padding-right: 8%;
+  }
+  /*-----<-FOOTER-----*/
+}
